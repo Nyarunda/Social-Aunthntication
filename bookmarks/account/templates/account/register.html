@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Create an account{% endblock %}
+{% block content %}
+
+<div class="login-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="form-section">
+                    <div class="logo-2">
+                        <a href="#">
+                            <img src="{% static 'img/logos/logo-2.png' %}"  alt="logo">
+                        </a>
+                    </div>
+                    <h1>Create an account</h1>
+                    <p>Please, sign up using the following form:</p>
+                    <form method="post">
+                        {% csrf_token %}
+                    
+                            {% for field in user_form %}
+                            <div class="form-group form-box">
+                                {{ field.label_tag }} {{ field }}
+                            </div>
+
+                        {% endfor %}
+                        <div class="form-group mb-0 clearfix">
+                            <input type="submit" class="btn-md btn-theme float-center m-3" value="Create my account">
+                        </div>
+                    </form>
+                    <p>Have an account? <a href="{% url 'login' %}" class="thembo"> Login here</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
