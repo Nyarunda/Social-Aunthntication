@@ -451,12 +451,13 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .login-2 .form-section .btn-md {
     cursor: pointer;
-    padding: 12px 50px 11px 50px;
+    padding: 6px 20px 6px 20px;
     letter-spacing: 1px;
     font-size: 15px;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
     border-radius: 50px;
+    margin-top: 10px;
 }
 
 .login-2 .form-section input[type=checkbox], input[type=radio] {
