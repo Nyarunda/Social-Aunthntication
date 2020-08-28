@@ -46,7 +46,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     background-color: red;
     color: white;
 }
-
 /** Login 1 start **/
 .login-1 {
     background: rgba(0, 0, 0, 0.04) url(../img/bg-image.jpg) top left repeat;
